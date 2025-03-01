@@ -73,3 +73,18 @@ for department in company_employees.values():  # Loop through each department
     total_employees += len(department)  # Count employees in each department
 
 print(f"Total Employees: {total_employees}\n")
+
+# Example input dictionary
+example = {"Alice": 10, "Bob": 20, "Charlie": 10, "David": 30}
+print(f"Example dictionary: {example}\n")
+
+# Initialize empty dictionary
+new_dict = {}
+
+# Loop through key-value pairs
+for key, value in example.items():
+    if value not in new_dict:  # Check if value exists as a key
+        new_dict[value] = []  # Create an empty list if key doesn't exist
+    new_dict[value].append(key)  # Append the name to the list
+
+print(f"Output: {new_dict}\n")
