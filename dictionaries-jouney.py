@@ -66,3 +66,10 @@ company_employees["Engineering"].update({
 })
 
 print(f"New company Employees: {company_employees}")
+
+total_employees = 0
+
+for department in company_employees.values():  # Loop through each department
+    total_employees += len(department)  # Count employees in each department
+
+print(f"Total Employees: {total_employees}\n")
