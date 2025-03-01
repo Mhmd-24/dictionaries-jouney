@@ -36,3 +36,13 @@ if answer == "Y":
   
 elif answer == "N":
     print("Good Bye.\n")
+
+sentence = input("Enter a sentence: ")
+
+words = sentence.split()  # Split the sentence into words
+words_dict = {}  # Dictionary to store word counts
+
+for word in words:
+     words_dict[word] = words_dict.get(word, 0) + 1  # Increment count
+
+print(f"The count for every word in the sence is {words_dict}\n") 
