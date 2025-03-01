@@ -46,3 +46,23 @@ for word in words:
      words_dict[word] = words_dict.get(word, 0) + 1  # Increment count
 
 print(f"The count for every word in the sence is {words_dict}\n") 
+
+# Create a dictionary named that stores information about employees in different departments.
+company_employees = {
+    "Engineering": {
+        "Alice": {"age": 30, "role": "Software Engineer"},
+        "Bob": {"age": 28, "role": "DevOps Engineer"}
+    },
+    "HR": {
+        "Charlie": {"age": 35, "role": "HR Manager"}
+    }
+}
+
+print(f"Company Employees: {company_employees}\n")
+
+# Add a new employee "David" to "Engineering" using update()
+company_employees["Engineering"].update({
+    "David": {"age": 27, "role": "Data Scientist"}
+})
+
+print(f"New company Employees: {company_employees}")
